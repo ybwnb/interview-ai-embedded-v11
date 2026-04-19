@@ -1,0 +1,13 @@
+idf_component_register(
+    SRCS
+        "src/bsp_i2c.c"
+        "src/bsp_ws2812.c"
+        "src/bsp_tca9555.c"
+        "src/bsp_qmi8658.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        led_strip
+        esp_timer
+)
